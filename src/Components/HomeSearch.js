@@ -6,13 +6,19 @@ import {
   SafeAreaView,
   ScrollView,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { responsiveHeight } from "react-native-responsive-dimensions";
 import { FontAwesome } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 const HomeSearch = () => {
+  const navigation = useNavigation();
+  const [key, setKey] = useState("");
+  const handleBlurSearch = () => {
+    navigation.navigate("Search", { q: key });
+  };
   return (
     <SafeAreaView
       style={{
@@ -48,7 +54,13 @@ const HomeSearch = () => {
               size={22}
               color="black"
             />
-            <TextInput style={{ flex: 1 }} placeholder="Search LapTop" />
+            <TextInput
+              onBlur={handleBlurSearch}
+              onChangeText={(text) => setKey(text)}
+              value={key}
+              style={{ flex: 1 }}
+              placeholder="Search LapTop"
+            />
           </Pressable>
           <Feather name="mic" size={24} color="black" />
         </View>

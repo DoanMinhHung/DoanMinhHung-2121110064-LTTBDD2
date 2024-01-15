@@ -15,6 +15,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome } from "@expo/vector-icons";
 // import BottomNavigator from "./src/navigation/BottomNavigator";
 import { TabNavigation } from "./TabNavigation";
+import Search from "./src/Screens/Search";
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -41,7 +42,7 @@ const App = () => {
           <Stack.Screen name="Tab" component={TabNavigation} options={{ headerShown: false }}/>
          
           <Stack.Screen
-        name="Slapsh"
+        name="Slapsh" 
         component={Splash}
         options={{ headerShown: false }}
       />
@@ -49,6 +50,11 @@ const App = () => {
       <Stack.Screen
         name="Signup"
         component={Signup}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Search"
+        component={Search}
         options={{ headerShown: false }}
       />
        <Stack.Screen

@@ -49,16 +49,19 @@ const ProductsCarousel = ({ data }) => {
               <Text style={{ fontSize: 17, fontWeight: "600", textAlign:"center" }}>
                 {item.name}
               </Text>
-              {/* <Text style={{ color: "gray" }}>quantity: {item.pieces}</Text> */}
 
               <View
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
                   justifyContent: "space-between",
+                  backgroundColor: "#DC143C",
+                  borderRadius: 10,
+                  height: 40,
+                  marginTop: 18,
                 }}
               >
-                <Text style={{ color: "#990000", fontWeight: "bold" }}>Giá: 
+                <Text style={{ color: "white", fontWeight: "bold", fontSize: 20, left: 10 }}>Giá: 
                   {item.price} USD
                 </Text>
                 <AntDesign
@@ -68,13 +71,9 @@ const ProductsCarousel = ({ data }) => {
                   onPress={() => {
                     dispatch(addToCart(item));
                   }}
-                  style={{ left: 45}}
+                  style={{ top: -190, right: 135}}
                 />
                 
-                
-                <Text style={{ top:25, right:70, color: "black", fontSize: 15, fontWeight: "600" }}>
-                  Add to Cart
-                </Text>
               </View>
             </View>
           </TouchableOpacity>
