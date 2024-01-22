@@ -25,6 +25,62 @@ export const fruits = [
       price: 4.999,
       img: "https://laptopaz.vn/media/product/3013_slim_5_2023.jpg",
     },
+    {
+      name: "[Like New] Dell Latitude 7490",
+      pieces: "10",
+      price: 1.999,
+      img: "https://laptopaz.vn/media/product/250_1516_laptopaz_dell_latitude_7490_1.jpg",
+    },
+    {
+
+
+      name: "[Like New] Laptop cũ Dell Latitude E7470",
+      pieces: "4",
+      price: 4.939,
+      img: "https://laptopaz.vn/media/product/250_1232_laptopaz_dell_latitude_e7470_1.jpg",
+    },
+    {
+      name: "[Like New] Dell Inspiron 5577",
+      pieces: "7",
+      price: 4.999,
+      img: "https://laptopaz.vn/media/product/1078_laptopaz_dell_inspiron_5577_1.jpg",
+    },
+    {
+      name: "[Like New] Acer Nitro 5 AN515-57-56Z1",
+      pieces: "5",
+      price: 4.999,
+      img: "https://laptopaz.vn/media/product/2920_",
+    },
+    {
+      name: "[New 100%] Lenovo Legion 5 R7000",
+      pieces: "10",
+      price: 1.999,
+      img: "https://laptopaz.vn/media/product/250_3126_",
+    },
+    {
+      name: "[New 100%] Lenovo Legion Pro 5",
+      pieces: "10",
+      price: 1.999,
+      img: "https://laptopaz.vn/media/product/250_2816_2816_e2e2e23.png",
+    },
+    {
+      name: "[New 100%] Acer Predator Helios",
+      pieces: "10",
+      price: 1.999,
+      img: "https://laptopaz.vn/media/product/2986_helios_neo_2023.jpg",
+    },
+    {
+      name: "[New 100%] Lenovo GeekPro G5000",
+      pieces: "10",
+      price: 1.999,
+      img: "https://laptopaz.vn/media/product/2882_",
+    },
+    {
+      name: "[New 100%] Asus TUF Dash F15",
+      pieces: "10",
+      price: 1.999,
+      img: "https://laptopaz.vn/media/product/2997_",
+    },
   ];
   export const vegetables = [
     {

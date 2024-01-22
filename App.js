@@ -17,27 +17,12 @@ import { FontAwesome } from "@expo/vector-icons";
 import { TabNavigation } from "./TabNavigation";
 import Search from "./src/Screens/Search";
 
+
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <Provider store={Store}>
       <NavigationContainer>
-        {/* <Tab.Navigator 
-        initialRouteName="Slapsh"
-        screeeOptions={{
-        headerShown:false,  
-        }}
-      >
-       
-       <Stack.Screen name="bottom" component={BottomNavigator} options={{ headerShown: false }}/>
-        <Stack.Screen name="Slapsh" component={Splash} options={{ headerShown: false }}/>
-        <Stack.Screen name="Login" component={Login}/>
-        <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }}/>
-        <Tab.Screen name="Home" component={Home} options={{headerShown: false}}/>
-        <Stack.Screen name="Details" component={Details} options={{ headerShown: false }} />
-       <Stack.Screen name="Cart" component={Cart} options={{ headerShown: false }}/>
-       <Stack.Screen name="Orderplaced" component={Orderplaced} options={{ headerShown: false }}/>
-      </Tab.Navigator > */}
         <Stack.Navigator>
           <Stack.Screen name="Tab" component={TabNavigation} options={{ headerShown: false }}/>
          
@@ -46,12 +31,16 @@ const App = () => {
         component={Splash}
         options={{ headerShown: false }}
       />
-      
       <Stack.Screen
+        name="Login"
+        component={Login}
+        options={{ headerShown: false }}
+      />
+       <Stack.Screen
         name="Signup"
         component={Signup}
         options={{ headerShown: false }}
-      />
+      /> 
       <Stack.Screen
         name="Search"
         component={Search}
